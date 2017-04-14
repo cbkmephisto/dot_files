@@ -9,6 +9,7 @@ export GREP_OPTIONS="--color=auto"
 #alias ls='ls -w' # force to show Chinese characters
 alias less='less --RAW-CONTROL-CHARS'
 
+alias ls='ls --color'
 alias ll='ls -l'
 
 #export CLICOLOR=1
