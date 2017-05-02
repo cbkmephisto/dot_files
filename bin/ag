@@ -5,6 +5,8 @@ sudo port upgrade outdated
 sudo port -u uninstall
 sudo tlmgr update --all
 
+export CC=clang # if pip needs compiling something, on mac
+
 pip3 install --upgrade pip
 for pkg in $(pip3 list | awk '{print $1}')
 do
