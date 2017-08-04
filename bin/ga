@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo port install $*
+sudo apt install -y $*

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pip3 install --upgrade --user pip
+for pkg in $(pip3 list | awk '{print $1}')
+do
+	echo "======================= $pkg"
+	pip3 install --upgrade --user $pkg # | grep -v "already up-to-date"
+done
+

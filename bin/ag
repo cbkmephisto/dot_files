@@ -1,22 +1,5 @@
 #!/bin/bash
-sudo port selfupdate
-sudo port -d sync
-sudo port upgrade outdated
-sudo port -u uninstall
-sudo tlmgr update --all
+agu
+agg
+agp
 
-export CC=clang # if pip needs compiling something, on mac
-
-pip3 install --upgrade pip
-for pkg in $(pip3 list | awk '{print $1}')
-do
-	echo "======================= $pkg"
-	pip3 install --upgrade $pkg # | grep -v "already up-to-date"
-done
-
-pip2 install --user --upgrade pip
-for pkg in $(pip2 list | awk '{print $1}')
-do
-	echo "======================= $pkg"
-	pip2 install --user --upgrade $pkg
-done
