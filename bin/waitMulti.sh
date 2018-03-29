@@ -7,7 +7,7 @@
         do
 #		echo ---------------------
 #		ps -A | grep $1
-                nthreads=`ps -A | grep $1 | grep -v grep | grep -v waitMulti.sh| wc -l`
+                nthreads=`ps -u $USER | grep $1 | grep -v grep | grep -v waitMulti.sh| wc -l`
                 if [ $nthreads -lt $2 ]
                 then
                         break
