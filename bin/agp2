@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export CC=clang
+
+pip2 install --user --upgrade pip
+for pkg in $(pip2 list | awk 'FNR>2{print $1}')
+do
+	echo "======================= $pkg"
+	pip2 install --user --upgrade $pkg 
+done
