@@ -15,7 +15,7 @@ done
 
 echo Done. Please WAIT for seconds to allow displaylinkmanager to restart
 
-sleep 7
+# sleep 7
 
-xrandr --output DVI-I-2-2 --auto --rotate right --pos 0x0 --left-of eDP-1 --output eDP-1 --pos 1080x960 --output DVI-I-1-1 --auto --right-of eDP-1
+# xrandr --output DVI-I-2-2 --auto --rotate right --pos 0x0 --left-of eDP-1 --output eDP-1 --pos 1080x960 --output DVI-I-1-1 --auto --right-of eDP-1
 
