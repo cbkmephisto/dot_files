@@ -29,4 +29,9 @@ alias py3='python3'
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/.local/bin
+
+alias trans='trans -t zh'
+alias jl='jupyter-lab'  # launch jupyter-lab at pwd
+export GTK_IM_MODULE=ibus  # dbeaver gtk issue
+
