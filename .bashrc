@@ -10,7 +10,7 @@ alias grep="grep --color=auto"
 #alias ls='ls -w' # force to show Chinese characters
 alias less='less --RAW-CONTROL-CHARS'
 
-alias ls='ls --color'
+alias ls='ls --color=auto'
 alias ll='ls -l'
 
 #export CLICOLOR=1

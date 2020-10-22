@@ -8,3 +8,5 @@ do
   cp $fn ~/
 done
 
+. ~/.bashrc
+

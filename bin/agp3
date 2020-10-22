@@ -2,9 +2,12 @@
 
 export CC=clang
 
-pip3 install --upgrade pip
-for pkg in $(pip3 list | awk 'FNR>2{print $1}')
+pip="python3 -m pip"
+par="--upgrade --user"
+
+$pip install $par pip
+for pkg in $($pip list | awk 'FNR>2{print $1}')
 do
 	echo "======================= $pkg"
-	pip3 install --upgrade $pkg # | grep -v "already up-to-date" &
+	$pip install $par $pkg # | grep -v "already up-to-date" &
 done
