@@ -35,3 +35,4 @@ alias trans='trans -t zh'
 alias jl='jupyter-lab'  # launch jupyter-lab at pwd
 export GTK_IM_MODULE=ibus  # dbeaver gtk issue
 
+. "$HOME/.cargo/env"
