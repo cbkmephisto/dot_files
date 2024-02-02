@@ -6,7 +6,7 @@ is_sudo=`groups $USER | grep sudo | wc -l`
 if [ ${is_sudo} -eq 1 ]
 then
     sudo apt-get update && sudo apt-get upgrade -y
-    sudo apt-get install tmux vim htop
+    sudo apt-get install -y tmux vim htop
 fi
 
 pip3 install --upgrade pip bpytop jupyterlab \
